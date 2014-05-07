@@ -1,0 +1,52 @@
+{
+    "name": "stun.js",
+    "version": "0.0.1",
+    "longName": "STUN Server Implementation",
+    "description": "An RFC5389 compliant STUN/TURN server written in Node.js",
+
+    "author": "Chad Engler <chad@pantherdev.com>",
+    "contributors": [],
+
+    "homepage": "https://github.com/englercj/stun.js",
+    "bugs": "https://github.com/englercj/stun.js/issues",
+
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/englercj/stun.js.git"
+    },
+
+    "main": "lib/index",
+
+    "dependencies": {
+        "sprintf": "^0.1.3"
+    },
+
+    "devDependencies": {
+        "grunt": "^0.4.4",
+        "grunt-contrib-jshint": "^0.10.0",
+        "grunt-mocha-cov": "^0.2.1",
+
+        "mocha-term-cov-reporter": "^0.2.0",
+
+        "chai": "^1.9.1",
+        "sinon": "^1.9.1",
+        "sinon-chai": "^2.5.0"
+    },
+
+    "scripts": {
+        "test": "grunt test"
+    },
+
+    "engines": {
+        "node": "~0.10.20"
+    },
+
+    "config": {
+        "blanket": {
+            "pattern": [
+                "stun.js/lib/",
+                "stun.js/server/"
+            ]
+        }
+    }
+}
